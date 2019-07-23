@@ -1,0 +1,25 @@
+body {
+	background-color: #303030;
+	margin: 0;
+}
+
+#splashlogo img {
+	max-width: 250px;
+}
+
+#splashcontainer {
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+#splashtitle {
+	text-align: center;
+}
+
+#splashtitle p {
+	color: #FFF;
+	font-size: 4em;
+	font-family: 'Righteous', cursive;
+}
