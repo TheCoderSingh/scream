@@ -252,6 +252,61 @@ footer p {
 	border: none;
 }
 
+nav {
+	border-bottom: 1px solid #222;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	display: inline-flex;
+	padding: 0;
+}
+
+nav ul li {
+	padding: 0 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+#homeintro {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-items: center;
+	margin-top: 30px;
+}
+
+#homeintro img {
+	max-width: 200px;
+}
+
+#intropara {
+	color: #FFF;
+}
+
+#intropara h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 2.5em;
+}
+
+#intropara p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+}
+
+#intropara a {
+	text-decoration: none;
+	color: #5CBDEA;
+}
+
+#bigimg {
+	max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
 	.social {
 		grid-template-columns: 10% 10% 10% 10%;
