@@ -1,6 +1,11 @@
 body {
 	background-color: #303030;
 	margin: 0;
+	background-image: url('../images/bg2.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: 100vh;
+	background-position: ;
 }
 
 #splashlogo img {
@@ -283,6 +288,8 @@ nav ul li a {
 	grid-template-columns: 50% 50%;
 	justify-items: center;
 	margin-top: 30px;
+	align-items: center;
+	height: 80vh;
 }
 
 #homeintro img {
@@ -295,12 +302,12 @@ nav ul li a {
 
 #intropara h1 {
 	font-family: 'Righteous', cursive;
-	font-size: 2.5em;
+	font-size: 4em;
 }
 
 #intropara p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 0.9em;
+	font-size: 1.5em;
 }
 
 #intropara a {
@@ -330,6 +337,17 @@ nav ul li a {
 	border-radius: 5px;
 }
 
+#aboutme {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-items: center;
+	margin-top: 40px;
+}
+
+#aboutme img {
+	max-width: 180px;
+}
+
 @media screen and (min-width: 768px) {
 	.social {
 		grid-template-columns: 10% 10% 10% 10%;
@@ -345,5 +363,14 @@ nav ul li a {
 
 	.msgcontent {
 		grid-template-columns: 5% 95%;
+	}
+
+	body {
+		/* background-color: #303030; */
+		margin: 0;
+		background-image: url('../images/bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 }
