@@ -7,23 +7,25 @@
 		<title>Scream | The best place to work and communicate</title>
 
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<div id="backbtn">
+			<a href="/register.html" class="back"><span>&#8249;</span></a>
+		</div>
 		<div class="inner">
 			<section id="registercont">
 				<div id="registerlogo">
 					<img src="images/logo.png" alt="Scream Logo">
 				</div>
-				<div id="registertitle">
-					<p>Register</p>
-				</div>
 				<div class="regform">
 					<form action="/register2.html">
-						<input type="email" placeholder="Email" required>
-						<input type="password" placeholder="Password" required>
-						<input type="password" placeholder="Confirm Password" required>
-						<button type="submit">Next</button>
+						<input type="text" placeholder="First Name" required id="firstname">
+						<input type="text" placeholder="Last Name" required id="lastname">
+						<input type="text" placeholder="Username" required id="username">
+						<input type="checkbox" required name="terms" id="terms">
+						<label for="terms" id="agreetext">I agree to the terms and conditions</label>
+						<button type="submit">Register</button>
 					</form>
 				</div>
 			</section>
