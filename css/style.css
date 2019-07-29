@@ -170,7 +170,7 @@ footer p {
 
 #chatcont {
 	border-left: 1px solid;
-	max-height: 100vh;
+	height: 100vh;
 }
 
 #chatinfo {
@@ -179,7 +179,6 @@ footer p {
 
 #chatarea {
 	padding: 1em;
-	overflow: scroll;
 }
 
 #channelarea {
@@ -246,6 +245,10 @@ footer p {
 	margin-left: 20px;
 }
 
+.msginpcont form {
+	display: flex;
+}
+
 #inpmsg {
 	padding: 5px 10px;
 	border-radius: 6px;
@@ -307,6 +310,24 @@ nav ul li a {
 	max-width: 100%;
 }
 
+#inpmsg {
+	width: 80%;
+	height: 2em;
+	outline: none;
+}
+
+#msgbtn {
+	height: 2.7em;
+	width: 20%;
+	margin-left: 2%;
+	background-color: #222;
+	border: none;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
 	.social {
 		grid-template-columns: 10% 10% 10% 10%;
@@ -314,5 +335,13 @@ nav ul li a {
 
 	.ordivider {
 		grid-template-columns: 1fr 0.2fr 1fr;
+	}
+
+	.ownmsgcontent {
+		grid-template-columns: 90% 10%;
+	}
+
+	.msgcontent {
+		grid-template-columns: 5% 95%;
 	}
 }
