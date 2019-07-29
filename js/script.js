@@ -1,4 +1,5 @@
-regsubmit.addEventListener("click", (e) => {
+let x = document.getElementById("regsubmit");
+x.addEventListener("click", (e) => {
 	e.preventDefault();
 
 	if (regemail.value === "" || regpass.value === "" || regconfpass.value === "") {
@@ -16,4 +17,18 @@ reg2submit.addEventListener("click", (e) => {
 
 	if (regpass.value !== regconfpass.value)
 		regform2.innerHTML += "<p class='error'>Passwords do not match</p>";
+});
+
+msgbtn.addEventListener("click", (e) => {
+	e.preventDefault();
+
+	let today = new Date();
+
+	let msg = inpmsg.value;
+
+	if (msg !== "") {
+		messagearea.innerHTML += `<div class='msg'><p class='msgtime' > ${today.getHours()}:${today.getMinutes()}</p ><div class='ownmsgcontent'><p class='msgtext'> ${msg} </p><img src='images/face.jpeg' alt='Sender Image' class='senderimg'></div></div>`;
+
+		inpmsg.value = null;
+	}
 });

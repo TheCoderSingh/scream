@@ -168,6 +168,90 @@ footer p {
 	color: #FFF;
 }
 
+#chatcont {
+	border-left: 1px solid;
+	max-height: 100vh;
+}
+
+#chatinfo {
+	border-bottom: 1px solid;
+}
+
+#chatarea {
+	padding: 1em;
+	overflow: scroll;
+}
+
+#channelarea {
+	border-right: 1px solid;
+}
+
+.msg {
+	display: grid;
+	grid-template-rows: 20px 20px auto;
+	grid-gap: 10px;
+	margin-bottom: 20px;
+}
+
+
+.msgcontent, .ownmsgcontent {
+	display: grid;
+	margin-top: 10px;
+	align-items: center;
+}
+
+.msgcontent {
+	grid-template-columns: 20% 80%;
+}
+
+.ownmsgcontent {
+	grid-template-columns: 80% 20%;
+	grid-gap: 20px;
+	text-align: right;
+}
+
+.chatname, .creatorname, .chatdesc {
+	font-family: 'Roboto', sans-serif;
+	color: #B2B2B2;
+	font-size: 0.8em;
+}
+
+.msgtime {
+	color: #FFF;
+	font-size: 0.7em;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+.msgsender {
+	color: #5CBDEA;
+	font-size: 0.7em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.senderimg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.msgtext {
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+}
+
+.msginpcont {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+#inpmsg {
+	padding: 5px 10px;
+	border-radius: 6px;
+	border: none;
+}
+
 @media screen and (min-width: 768px) {
 	.social {
 		grid-template-columns: 10% 10% 10% 10%;
