@@ -45,7 +45,7 @@ sendmsg = () => { // Function to send message and append to the chat
 			console.log("Your messages:");
 			for (let i = messages.length; i >= 0; i--) {
 				if (messages[i] !== undefined)
-					console.log(messages[i]);
+					console.log(String(messages[i]));
 			}
 			inpmsg.value = null;
 		}
