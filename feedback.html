@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Provide Feedback | Scream</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<script src="js/script.js" defer></script>
+	</head>
+	<body onload="sendfdbk();">
+		<header>
+			<nav>
+				<a href="/index.html">
+					<div class="navlogo">
+						<img src="images/logo.png" alt="Logo">
+						<span class="sitename">Scream</span>
+					</div>
+				</a>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/register.html">Register</a></li>
+					<li><a href="/login.html">Login</a></li>
+					<li><a href="/chat.html">Chat</a></li>
+					<li><a href="/about.html">About Me</a></li>
+					<li><a href="/feedback.html">Feedback</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="inner">
+			<section id="feedbackarea">
+				<h1>Provide your feedback</h1>
+				<form>
+					<input type="text" placeholder="First Name" required id="fnamefb"><br>
+					<input type="text" placeholder="Last Name" required id="lnamefb">
+					<p>Did you like the website?</p>
+					<input type="radio" id="feedbackoptn1" name="fdbckoptn" required checked>
+					<label for="feedbackoptn1">Yes</label>
+					<input type="radio" id="feedbackoptn2" name="fdbckoptn" required>
+					<label for="feedbackoptn2">No</label><br>
+					<textarea cols="30" rows="10" placeholder="Comments" required id="comfb"></textarea><br>
+					<button type="submit" id="fdbkbtn">Submit</button>
+				</form>
+			</section>
+			<section id="feedbackres">
+				<p>You submitted:</p>
+				<p>First Name: </p><span id="fnameres"></span>
+				<p>Last Name: </p><span id="lnameres"></span>
+				<p>Comments: </p><span id="commentres"></span>
+			</section>
+		</div>
+		<footer>
+			<p>Copyright &copy; 2019 | All Rights Reserved</p>
+			<p>Developed by Jaskaran Singh with &hearts; at Langara College</p>
+		</footer>
+	</body>
+</html>

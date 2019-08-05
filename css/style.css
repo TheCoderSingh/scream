@@ -1,11 +1,6 @@
 body {
 	background-color: #303030;
-	margin: 0;
-	background-image: url('../images/bg2.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-size: 100vh;
-	background-position: ;
+	margin: 0;	
 }
 
 #splashlogo img {
@@ -174,7 +169,7 @@ footer p {
 }
 
 #chatcont {
-	border-left: 1px solid;
+	padding-top: 60px;
 	height: 100vh;
 }
 
@@ -264,13 +259,14 @@ footer p {
 
 nav {
 	border-bottom: 1px solid #222;
-	text-align: center;
+	justify-items: center;
 }
 
 nav ul {
 	list-style-type: none;
 	display: inline-flex;
 	padding: 0;
+	align-items: center;
 }
 
 nav ul li {
@@ -284,30 +280,29 @@ nav ul li a {
 }
 
 #homeintro {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	justify-items: center;
-	margin-top: 30px;
-	align-items: center;
-	height: 80vh;
+	text-align: center;
+	padding: 15px;
 }
 
 #homeintro img {
-	max-width: 200px;
+	max-width: 150px;
+	margin-top: 30px;
 }
 
 #intropara {
 	color: #FFF;
+	text-align: center;
 }
 
 #intropara h1 {
 	font-family: 'Righteous', cursive;
-	font-size: 4em;
+	font-size: 5em;
+	margin: 0;
 }
 
 #intropara p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #intropara a {
@@ -348,6 +343,123 @@ nav ul li a {
 	max-width: 180px;
 }
 
+nav img {
+	max-width: 60px;
+	margin: 8px 10px;
+}
+
+.navlogo {
+	display: flex;
+	align-items: center;
+}
+
+.navlogo span {
+	font-family: 'Righteous', cursive;
+	color: #FFF;
+	font-size: 1.5em;
+}
+
+#introimgcont {
+	max-height: 30vh;
+	overflow: hidden;
+}
+.peopleimg {
+	width: 100vw;
+	max-height: 30vh;
+	background-size: 100% 100%;
+}
+
+#channelarea img {
+	max-width: 100px;
+}
+
+#devimg {
+	height: 150px;
+	width: 150px;
+	border: 4px solid #FFF;
+	border-radius: 50%;
+}
+
+#devintro {
+	margin-top: 60px;
+	justify-items: center;
+	grid-gap: 40px;
+	line-height: 30px;
+	text-align: center;
+	display: block;
+}
+
+#devintro h1, #devintro p {
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+#devintro h1 {
+	font-size: 2.5em;
+}
+
+#devintro p {
+	font-size: 1em;
+	max-width: 100%;
+	text-align: center;
+}
+
+#feedbackarea {
+	text-align: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+#feedbackarea > h1 {
+	font-size: 2em;
+}
+
+#feedbackarea input[type="text"] {
+	margin-top: 20px;
+	padding: 5px 15px;
+	border-radius: 6px;
+	width: 200px;
+	height: 30px;
+	outline: none;
+	border: none;
+}
+
+#feedbackarea textarea {
+	margin-top: 20px;
+	border-radius: 6px;
+	padding: 10px 15px;
+}
+
+#feedbackarea button {
+	margin-top: 30px;
+	padding: 12px;
+	border-radius: 6px;
+	border: 1px solid #FFF;
+	background: transparent;
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+#feedbackres {
+	text-align: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	display: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+header a {
+	text-decoration: none;
+}
+
+nav {
+	display: block;
+	font-size: 0.8em;
+}
+
 @media screen and (min-width: 768px) {
 	.social {
 		grid-template-columns: 10% 10% 10% 10%;
@@ -365,12 +477,32 @@ nav ul li a {
 		grid-template-columns: 5% 95%;
 	}
 
-	body {
-		/* background-color: #303030; */
-		margin: 0;
-		background-image: url('../images/bg.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-size: 100%;
+	nav {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		font-size: 1em;
+	}
+
+	#devintro {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		text-align: left;
+	}
+
+	#devintro p {
+		font-size: 1.2em;
+		max-width: 60%;
+		text-align: justify;
+	}
+
+	#devimg {
+		height: 300px;
+		width: 300px;
+		border: 4px solid #FFF;
+		border-radius: 50%;
+	}
+
+	#devdesc {
+		margin-left: 60px;
 	}
 }
