@@ -12,3 +12,7 @@ JavaScript Elements Used:
 10) Email and Password fields are used in signup and login forms.
 11) Date() is used to get date in the chat messages.
 12) String() type conversion is used to convert messages into strings before displaying in the console.
+
+Instructions:
+1) After you submit the first registration form, the second one will open (it does not have a link in the main navigation bar)
+2) Check console on chat page for the last messages.
